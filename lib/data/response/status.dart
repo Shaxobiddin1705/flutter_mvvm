@@ -1,0 +1,1 @@
+enum Status{LOANING, COMPLETED, ERROR}
