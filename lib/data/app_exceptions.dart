@@ -22,3 +22,9 @@ class BadRequestException extends AppException {
 class UnauthorizedException extends AppException {
   UnauthorizedException([String? message]) : super(message, 'Unauthorized request');
 }
+
+class RequestCancelled implements Exception {
+  final String? message;
+
+  RequestCancelled([this.message]);
+}
